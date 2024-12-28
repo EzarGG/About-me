@@ -16,18 +16,17 @@ Hi, I'm **EzarGG**! I am a tech enthusiast with a passion for gaming and program
 
 ## Skills
 
-- **Programming Languages**: Python, JavaScript, C++
-- **Web Development**: HTML, CSS, React
-- **Game Development**: Unity, Unreal Engine
-- **Tools & Technologies**: Git, Docker, SQL
+- **Programming Languages**:LuaGG
+- **Web Development**: HTML
+- **Game Development**: 
+- **Tools & Technologies**: Github
 
 ## Projects
 
 Here are some of the projects I have worked on:
 
-1. **[Project Name 1](#)**: A brief description of what this project is about and the technologies used.
-2. **[Project Name 2](#)**: A brief description of what this project is about and the technologies used.
-3. **[Project Name 3](#)**: A brief description of what this project is about and the technologies used.
+1. **[Creating Bloodstrike cheats](#)**: 
+2. **[CODM Cheats](#)**:
 
 Feel free to explore these projects and provide feedback!
 
@@ -35,13 +34,11 @@ Feel free to explore these projects and provide feedback!
 
 Connect with me on social media:
 
-- [GitHub](https://github.com/yourusername)
-- [Twitter](https://twitter.com/yourusername)
-- [LinkedIn](https://linkedin.com/in/yourusername)
-- [Telegram](https://t.me/yourusername)
+- [GitHub](https://github.com/EzarGG)
+- [Telegram](https://t.me/EzarGG)
 
 ## Contact
 
-If you have any questions or would like to collaborate, feel free to reach out to me at [your.email@example.com](mailto:your.email@example.com).
+If you have any questions or would like to collaborate, feel free to reach out to me at [ezargg227@gmail.com](mailto:your.email@example.com).
 
 Thank you for visiting my profile! I look forward to connecting with you.
