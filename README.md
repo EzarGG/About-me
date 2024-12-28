@@ -39,6 +39,6 @@ Connect with me on social media:
 
 ## Contact
 
-If you have any questions or would like to collaborate, feel free to reach out to me at [ezargg227@gmail.com](mailto:your.email@example.com).
+If you have any questions or would like to collaborate, feel free to reach out to me at [ezargg227@gmail.com](mailto:ezargg227@gmail.com).
 
 Thank you for visiting my profile! I look forward to connecting with you.
