@@ -58,7 +58,7 @@ header.scrolled {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('https://source.unsplash.com/1600x900/?gaming') no-repeat center center/cover;
+    background: url('https://source.unsplash.com/1600x900/?night-sky,stars') no-repeat center center/cover;
     color: white;
     position: relative;
     overflow: hidden;
@@ -154,6 +154,23 @@ header.scrolled {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Contact Button Styles */
+#contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0. 3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+#contact-button:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05);
+}
+
 /* Footer Styles */
 #footer-section {
     text-align: center;
@@ -161,26 +178,3 @@ header.scrolled {
     background-color: #333;
     color: white;
 }
-``` ### Updated JavaScript for Scroll Animation (script.js)
-
-```javascript
-// Change header background on scroll
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});
-
-// Smooth scroll for navigation links
-const links = document.querySelectorAll('nav a');
-links.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = e.target.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-    });
-});
