@@ -36,7 +36,7 @@ Connect with me on social media:
 
 - [GitHub](https://github.com/EzarGG)
 - [Telegram](https://t.me/EzarGG)
-
+- [Telegram Channel](https://t.me/bsconfigandinject)
 ## Contact
 
 If you have any questions or would like to collaborate, feel free to reach out to me at [ezargg227@gmail.com](mailto:ezargg227@gmail.com).
