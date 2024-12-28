@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Arial", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -43,29 +43,48 @@ header.scrolled {
 .nav-links a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #61dafb;
+    transform: scale(1.1);
 }
 
 /* Hero Section Styles */
 #hero-section {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(to bottom right, #282c34, #61dafb);
+    background: url('https://source.unsplash.com/1600x900/?gaming') no-repeat center center/cover;
     color: white;
-    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0  4px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #explore-button {
     padding: 10px 20px;
-    margin-top: 20px;
     background-color: #61dafb;
     border: none;
     border-radius: 5px;
@@ -81,17 +100,26 @@ header.scrolled {
 
 /* About Us Section Styles */
 #about-us {
-    padding: 50px;
-    background-color: #fff;
-    color: #333;
+    padding: 60px 20px;
     text-align: center;
+    animation: slideIn 1s ease-in-out;
 }
 
-/* Products Section Styles */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Our Products Section Styles */
 #our-products {
-    padding: 50px;
-    background-color: #f9f9f9;
-    text-align : center;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .product-list {
@@ -101,24 +129,58 @@ header.scrolled {
 }
 
 .product-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background: white;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
-    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: zoomIn 0.5s ease-in-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .product-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer Styles */
 #footer-section {
-    background-color: #282c34;
-    color: white;
     text-align: center;
     padding: 20px;
-  }
+    background-color: #333;
+    color: white;
+}
+``` ### Updated JavaScript for Scroll Animation (script.js)
+
+```javascript
+// Change header background on scroll
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Smooth scroll for navigation links
+const links = document.querySelectorAll('nav a');
+links.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});
